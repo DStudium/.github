@@ -1,0 +1,35 @@
+name: Story
+description: Ценность для пользователя, которую можно проверить руками в приложении
+type: Story
+projects: ["DStudium/2"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: История
+      description: Кто, что и зачем. Вместо «пользователь» — конкретная роль.
+      placeholder: Я, как <роль>, хочу <действие>, чтобы <результат>.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Зачем нам
+      description: Выгода команды или бизнеса, если она отличается от выгоды пользователя.
+  - type: textarea
+    id: done
+    attributes:
+      label: Готово когда
+      description: Каждый пункт проверяется руками в приложении, без curl.
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Решения
+      description: Что уже решили, чтобы не спорить второй раз.
+  - type: textarea
+    id: out
+    attributes:
+      label: Не входит

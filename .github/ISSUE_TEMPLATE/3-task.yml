@@ -1,0 +1,26 @@
+name: Task
+description: Техническая работа одного исполнителя, обычно часть стори
+type: Task
+projects: ["DStudium/2"]
+body:
+  - type: markdown
+    attributes:
+      value: После создания привяжи задачу к стори как sub-issue (правая панель → Relationships).
+  - type: textarea
+    id: what
+    attributes:
+      label: Что сделать
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Готово когда
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Заметки
+      description: Ссылки, подводные камни, решения по реализации.

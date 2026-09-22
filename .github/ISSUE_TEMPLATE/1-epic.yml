@@ -1,0 +1,29 @@
+name: Epic
+description: Бизнес-цель из нескольких стори, у которой есть момент завершения
+type: Epic
+projects: ["DStudium/2"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Цель
+      description: Что станет возможным, когда эпик закрыт. Одним-двумя предложениями.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Эпик закрыт, когда
+      description: Проверяемые условия. Если закрытие нельзя сформулировать — это не эпик.
+      value: "- "
+    validations:
+      required: true
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Общие решения
+      description: Договорённости, которые касаются всех стори эпика.
+  - type: textarea
+    id: out
+    attributes:
+      label: Не входит
